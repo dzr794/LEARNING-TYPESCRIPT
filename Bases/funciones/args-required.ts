@@ -17,9 +17,10 @@
   
   let noName:string;
 
-  const name2 = fullName('Tony', noName);
+  //! Esto da un error pero es uno personalizado, así que es aproposito
+  // // const name2 = fullName('Tony', noName);
 
   console.log({name});
-  console.log({name2});
+  
   
 })()
