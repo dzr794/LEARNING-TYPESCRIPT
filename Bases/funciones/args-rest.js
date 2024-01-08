@@ -11,3 +11,4 @@
     var superman = fullName('Klak', 'Joseph', 'Kent', "Carajo!!!");
     console.log({ superman: superman });
 })();
+//# sourceMappingURL=args-rest.js.map

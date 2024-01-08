@@ -14,3 +14,4 @@
     console.log({ name: name });
     console.log({ name2: name2 });
 })();
+//# sourceMappingURL=args-optonal.js.map

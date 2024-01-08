@@ -33,3 +33,4 @@
     var noHaceNadaTampoco;
     noHaceNadaTampoco = noHaceNada;
 })();
+//# sourceMappingURL=ejercicio_practico_2.js.map

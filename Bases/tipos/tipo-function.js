@@ -14,3 +14,4 @@
     myFunction = saveTheWorld;
     console.log(myFunction());
 })();
+//# sourceMappingURL=tipo-function.js.map

@@ -10,3 +10,4 @@
     console.log(typeof activateBatiSignal);
     var heroName = getHeroName();
 })();
+//# sourceMappingURL=functions.js.map

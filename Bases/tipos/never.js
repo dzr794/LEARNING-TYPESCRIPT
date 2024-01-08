@@ -10,3 +10,4 @@
     };
     error('Aiuda!');
 })();
+//# sourceMappingURL=never.js.map

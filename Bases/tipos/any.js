@@ -12,3 +12,4 @@
     console.log({ exist: exist });
     console.log({ power: power });
 })();
+//# sourceMappingURL=any.js.map
