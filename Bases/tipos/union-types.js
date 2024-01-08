@@ -2,8 +2,10 @@
 (function () {
     var myCustomVariable = 'Jorge';
     console.log(myCustomVariable);
+    console.log(typeof myCustomVariable);
     myCustomVariable = 5;
     console.log(myCustomVariable);
+    console.log(typeof myCustomVariable);
     myCustomVariable = {
         name: "David",
         age: 30,
@@ -15,4 +17,6 @@
             throw new Error('this no es del tipo esperado.');
         },
     };
+    console.log(myCustomVariable);
+    console.log(typeof myCustomVariable);
 })();
