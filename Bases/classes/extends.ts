@@ -4,7 +4,7 @@
       public name:string,
       public realName:string,
     ){
-      console.log(`Constructor Avenger llamado`);
+      // console.log(`Constructor Avenger llamado`);
     }
 
     protected getFullName(){
@@ -17,10 +17,28 @@
       name:string, 
       realName:string,
       public isMutant:boolean = true,
+      protected _debilidad:boolean = false,
+      private _afinidad:string = 'michis',
     ){
       super(name, realName);
-      console.log(`Constructor de Xmen llamado`);
+      // console.log(`Constructor de Xmen llamado`);
       
+    }
+
+    get debilidad():boolean{
+      return this._debilidad;
+    }
+
+    set debilidad(d:boolean){
+      this._debilidad = d;
+    }
+
+    get afinidad():string{
+      return this._afinidad;
+    }
+
+    set afinidad(a:string){
+      this._afinidad = a;
     }
 
     public getRealNameFromXmen():string{
@@ -30,7 +48,16 @@
 
   const wolverine = new Xmen('Wolverine', 'Logan');
 
-  console.log(wolverine);
-  console.log(wolverine.getRealNameFromXmen());
+  console.log(wolverine.debilidad);
+  wolverine.debilidad = true;
+  console.log(wolverine.debilidad);
+
+  console.log(wolverine.afinidad);
+  wolverine.afinidad = 'juegos';
+  console.log(wolverine.afinidad);
+  
+  
+  
+  
   
 })()
