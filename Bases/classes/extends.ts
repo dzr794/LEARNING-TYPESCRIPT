@@ -48,13 +48,14 @@
 
   const wolverine = new Xmen('Wolverine', 'Logan');
 
-  console.log(wolverine.debilidad);
-  wolverine.debilidad = true;
-  console.log(wolverine.debilidad);
+  //* Juego un poco con los getter y setter de parametros de privados y protegidos
+  // console.log(wolverine.debilidad);
+  // wolverine.debilidad = true;
+  // console.log(wolverine.debilidad);
 
-  console.log(wolverine.afinidad);
-  wolverine.afinidad = 'juegos';
-  console.log(wolverine.afinidad);
+  // console.log(wolverine.afinidad);
+  // wolverine.afinidad = 'juegos';
+  // console.log(wolverine.afinidad);
   
   
   
