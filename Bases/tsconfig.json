@@ -110,6 +110,6 @@
     "node_modules_2"
   ],
   "include": [
-    "classes"
+    "namespace"
   ]
 }
