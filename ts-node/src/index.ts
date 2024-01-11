@@ -1,14 +1,24 @@
-import  * as HeroFile from "./classes/Hero";
-import elNombreNoImporta, {Power,singlePower} from './data/powers';
+// import  * as HeroFile from "./classes/Hero";
+// import elNombreNoImporta, {Power,singlePower} from './data/powers';
 
-const hero = new HeroFile.Hero('SpiderMan', 500, 18);
+// const hero = new HeroFile.Hero('SpiderMan', 500, 18);
 
-console.log(hero);
-console.log(HeroFile.miEdad);
+// console.log(hero);
+// console.log(HeroFile.miEdad);
 
-// ya que se utilizo "export default" en el archivo ./data/powers, se puede hacer un llamado directamente con un alias y eso contendria la variable dentro del export default;
-console.log(elNombreNoImporta);
-console.log(singlePower);
+// // ya que se utilizo "export default" en el archivo ./data/powers, se puede hacer un llamado directamente con un alias y eso contendria la variable dentro del export default;
+// console.log(elNombreNoImporta);
+// console.log(singlePower);
+
+import  {Hero} from "./classes/Hero";
+
+const spiderMan = new Hero('SpiderMan', 2, 18);
+
+console.log(spiderMan.power);
+
+
+
+
 
 
 
