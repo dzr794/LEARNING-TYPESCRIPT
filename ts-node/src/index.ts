@@ -1,29 +1,21 @@
-// import  * as HeroFile from "./classes/Hero";
-// import elNombreNoImporta, {Power,singlePower} from './data/powers';
+import { printObject, badGenericFunction, goodGenericFunction, genericFunctionArrow } from "./generics/generics";
 
-// const hero = new HeroFile.Hero('SpiderMan', 500, 18);
+// * test con funcion generica que retorna un void, no genera errores
+// printObject(123);
+// printObject( new Date() );
+// printObject( {a:1, b:2, c:3} );
+// printObject( [1,2,3,4,5] );
+// printObject( 'Hola Mundo' );
 
-// console.log(hero);
-// console.log(HeroFile.miEdad);
+// ? (alias) badGenericFunction(arg: any): any
+console.log( badGenericFunction(1.1416).toFixed(2) );
+// ! Estos 2 generarian un error que no es capaz de detectar Typescrip si no hago la funcion correctamente! (porque estoy retornando un 'any')
+//// console.log( badGenericFunction('Holi').toFixed(2) );
+//// console.log( badGenericFunction( new Date() ).toFixed(2) );
 
-// // ya que se utilizo "export default" en el archivo ./data/powers, se puede hacer un llamado directamente con un alias y eso contendria la variable dentro del export default;
-// console.log(elNombreNoImporta);
-// console.log(singlePower);
+//? (alias) function goodGenericFunction<T>(arg: T): T
+// * Ahora si me muestra correctamente las ayudas de cada tipo, y detecta los errores antes de transpilar
+console.log(goodGenericFunction(123).toFixed(2));
+console.log( genericFunctionArrow('123').length ); 
 
-import  {Hero} from "./classes/Hero";
-
-const spiderMan = new Hero('SpiderMan', 2, 18);
-
-console.log(spiderMan.power);
-
-
-
-
-
-
-
-
-
-
-
-
+console.log( goodGenericFunction( new Date() ).getDay() );
